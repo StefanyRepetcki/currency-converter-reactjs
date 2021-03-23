@@ -34,7 +34,7 @@ export default class Convert extends Component {
 
   render() {
     return (
-      <div className='conversor'>
+      <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 conversor'>
         <h2>
           {this.props.money} para {this.props.tomoney}
         </h2>
@@ -44,7 +44,7 @@ export default class Convert extends Component {
             this.setState({ money_value: event.target.value });
           }}
         ></input>
-        <button type='button' onClick={this.convertMethod}>
+        <button type='button' class="btn btn-primary" onClick={this.convertMethod}>
           Converter
         </button>
         <h2>{this.state.tomoney_value}</h2>
