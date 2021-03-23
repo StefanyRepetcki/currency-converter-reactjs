@@ -1,0 +1,18 @@
+h4 {
+    text-align: center;
+}
+  
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+    background-image: radial-gradient(circle at top right, rgb(108, 28, 108) 0%, rgb(108, 28, 108) 3%, rgb(29, 0, 99) 3%, rgb(29, 0, 99) 50%, rgb(108, 28, 108) 50%, rgb(108, 28, 108) 60%, rgb(155, 14, 131) 60%, rgb(155, 14, 131) 63%, rgb(201, 1, 155) 63%, rgb(201, 1, 155) 100%) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    min-height: 100vh !important;
+}
+  
