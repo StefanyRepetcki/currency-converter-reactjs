@@ -34,20 +34,29 @@ export default class Convert extends Component {
 
   render() {
     return (
-      <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 conversor'>
-        <h2>
-          {this.props.money} para {this.props.tomoney}
-        </h2>
-        <input
-          type='text'
-          onChange={(event) => {
-            this.setState({ money_value: event.target.value });
-          }}
-        ></input>
-        <button type='button' class="btn btn-primary" onClick={this.convertMethod}>
-          Converter
-        </button>
-        <h2>{this.state.tomoney_value}</h2>
+      <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 conversor p-5'>
+        <div className="form-row">
+            <label for="formControl">{this.props.money} para {this.props.tomoney}</label>    
+            <input
+              id="formControl"
+              className="form-control" 
+              type="number" 
+              onChange={(event) => {
+                  this.setState({ money_value: event.target.value });
+                }} 
+              placeholder="0.00">          
+            </input>
+        </div>    
+        <div className="form-row"> 
+          <button type='button' className="form-control btn btn-primary" onClick={this.convertMethod}>
+                Converter
+          </button>
+          {this.state.tomoney_value.length > 0 &&
+              <h2>
+                {this.state.tomoney_value.length}
+              </h2>
+            }
+        </div>
       </div>
     );
   }
