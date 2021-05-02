@@ -1,0 +1,17 @@
+.conversor {
+  background: #ff305c;
+  background: -moz-linear-gradient(top, #ff6485 0%, #ff446c 66%, #ff305c 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #ff6485 0%,
+    #ff446c 66%,
+    #ff305c 100%
+  );
+  background: linear-gradient(to bottom, #ff6485 0%, #ff446c 66%, #ff305c 100%);
+  border-bottom: 2px solid #444444;
+}
+
+.navbar {
+  background-color: #1d0063 !important;
+  place-content: center !important;
+}
